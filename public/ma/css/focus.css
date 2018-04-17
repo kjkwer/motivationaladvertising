@@ -1,0 +1,131 @@
+.focusBox {
+	width: 800px;
+	position: relative;
+	overflow: hidden;
+	margin-top:10px;
+}
+
+.focus {
+	height: 505px;
+}
+
+.focus li {
+	float: left;
+}
+
+.focus .picBox {
+	height: 465px;
+	position: relative;
+	overflow: hidden;
+}
+
+.focus .picBox ul {
+	height: 465px;
+	position: absolute;
+}
+.focus .picBox li{
+	height: 100%;
+	width: 100%;
+} .focus .picBox img{
+	width:800px;
+	height:465px;
+}
+
+.focus .listBox {
+	width: 242px;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	left: 0;
+	background: #FFF;
+	padding: 0 30px 0 37px;
+}
+
+.focus .listBox ul {
+	height: 100px;
+	position: absolute;
+}
+
+.focus .listBox li {
+	width: 242px;
+	height: 122px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	position: relative;
+	display: block;
+}
+
+.focus .listBox li i {
+	display: none;
+}
+
+.focus .listBox li img {
+	width: 240px;
+	height:120px;
+	border: 1px solid #fff;
+}
+
+.focus .listBox .on img {
+	width: 240px;
+	height:120px;
+	border: 1px solid #ff9e06;
+}
+
+.focus .listBox .on i {
+	display: block;
+}
+
+.focus .listBox dl {
+	overflow: hidden;
+	text-align: center;
+	width: 76px;
+	margin: 15px auto 9px auto;
+}
+
+.focus .listBox dd a {
+	cursor: pointer;
+	width: 9px;
+	height: 9px;
+	float: left;
+	margin: 0 5px;
+	background: url(../img/gd_d.png) no-repeat;
+}
+
+.focus .listBox dd a {
+	background-position: 0 0;
+}
+
+.focus .listBox .d_ck a {
+	background-position: -20px 0px;
+}
+
+.focus .listBox .cp_xx {
+	height: 100px;
+	overflow: hidden;
+}
+
+.focus .listBox .cp_xx p {
+	line-height: 22px;
+	margin-bottom: 5px;
+	letter-spacing: 1px;
+}
+
+.focus .numct {
+	position: absolute;
+	bottom: 10px;
+	z-index: 99;
+	right: 45px;
+	overflow: hidden;
+}
+
+.focus .numct a {
+	color: #535353;
+	cursor: pointer;
+	float: left;
+	margin-left: 11px;
+	text-align: center;
+}
+
+.focus .numct .tk a {
+	border-bottom: 1px solid #ffb137;
+}

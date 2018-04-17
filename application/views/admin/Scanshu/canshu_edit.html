@@ -48,7 +48,7 @@
 					<td>
 						<select name="classid" id="classid" class="select-container1">
 							<option  value="0">顶级</option>
-							<?php echo $html_option ?>
+							<?php echo empty($html_option)?'':$html_option ?>
 						</select>
 						<script type="text/javascript">
 						$("#classid").val("<?php echo $classid ?>");

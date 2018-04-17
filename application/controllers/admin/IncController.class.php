@@ -257,7 +257,7 @@ class IncController extends BaseController{
 	            $upload = new Upload(); //实例化上传对象
 	            if ($filename = $upload->up($_FILES[$v['u1']])){
 	                //成功
-	                $data[$v['u1']] = $filename;
+	                $data[$v['u1']] =$filename;
 	                //调用模型完成入库操作，并给出相应的提示
 	
 	            }else {
@@ -280,7 +280,7 @@ class IncController extends BaseController{
 	            $this->library("Upload"); //载入文件上传类
 	            $upload = new Upload(); //实例化上传对象
 	            if ($filename = $upload->up($_FILES[$v['u1']])){
-	                $data[$v['u1']] = $filename;
+	                $data[$v['u1']] =$filename;
 	            }else {
 	            }
 	             
@@ -424,6 +424,9 @@ class IncController extends BaseController{
 	    // $targetDir = ini_get("upload_tmp_dir") . DIRECTORY_SEPARATOR . "plupload";
 	    $targetDir = $GLOBALS['config_cache']['UPLOAD_DIR'].'upload_tmp'.$my_filepath;
 	    $uploadDir = $GLOBALS['config_cache']['UPLOAD_DIR'].'upload'.$my_filepath;
+
+
+
 	    //$GLOBALS['config_cache']['UPLOAD_DIR']
 
 
@@ -470,7 +473,7 @@ class IncController extends BaseController{
 	    
 	    $filePath = $targetDir . "/" . $fileName;
 	    $uploadPath = $uploadDir . "/". $fileName;
-	    
+
 	    // Chunking might be enabled
 	    $chunk = isset($_REQUEST["chunk"]) ? intval($_REQUEST["chunk"]) : 0;
 	    $chunks = isset($_REQUEST["chunks"]) ? intval($_REQUEST["chunks"]) : 1;
@@ -561,7 +564,7 @@ class IncController extends BaseController{
 	    }
 	    
 	    // Return Success JSON-RPC response
-	    die($GLOBALS['config_cache']['SITEURL']."/".$uploadPath);  
+	    die($GLOBALS['config_cache']['SITEURL']."/".$uploadPath);
 	}
 	
 }

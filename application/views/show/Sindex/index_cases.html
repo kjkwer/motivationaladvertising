@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title></title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="public/ma/css/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="public/ma/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="public/ma/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="public/ma/css/focus.css"/>
+    <script type="text/javascript" src="public/ma/js/jquery-1.8.3.min.js"></script>
+
+    <script type="text/javascript" src="public/ma/js/js.js"></script>
+    <script type="text/javascript" src="public/ma/js/wow.min.js"></script>
+</head>
+<body>
+<div class="cases">
+    <!--head start-->
+    <div class="head txt_c">
+        <a class="fl"><img src="public/ma/img/fh.png"></a>
+        <span class="ft_26">无视觉 <font class="color_y">●</font>不形象</span>
+        <a class="nav_open fr ft_18">MENU<img src="public/ma/img/zk2.png" class="pad_l_15"></a>
+    </div>
+
+    <div class="nav_box none ft_55 txt_c">
+        <div class="close txt_r dis"><img src="public/ma/img/close.png"></div>
+        <ul>
+            <li><a class="bor animated flipInX" href="index.php">Home</a></li>
+            <li><a class="bor animated flipInX" href="index.php?p=show&c=index&a=about">About</a></li>
+            <li><a class="bor animated flipInX" href="index.php?p=show&c=index&a=cases">Dsign</a></li>
+            <li><a class="animated flipInY" href="index.php#lianxiwomen">联系我们</a></li>
+        </ul>
+        <p class="color_f ft_16 txt_l">备案号：蜀ICP备1500025</p>
+    </div>
+    <!--head end-->
+
+    <!--logo start-->
+    <div class="logo txt_c animated fadeInUp">
+        <span><img src="public/ma/img/logo1.png"></span>
+        <span><img src="public/ma/img/logo2.png"></span>
+    </div>
+    <!--logo end-->
+    <div class="banner" style="background-image: url(public/ma/img/banner3.png);"></div>
+    <!--main start-->
+    <div class="main width_w">
+        <!--start-->
+        <div class="an txt_c ft_18 animated wow flipInX">
+            <h1 class="color_y ft_72">Our  Design</h1>
+            <p class="p1 ft_30">We are delineators of our clients' thoughts and the communica<br>tors of their ideas</p>
+            <p class="tx"><img src="public/ma/img/d4.png">我们是客户思想的描绘师，想法的传达者</p>
+            <p class="ft_14">
+                我们是从事企业与品牌形象设计的专业机构。主要为企业提供标志设计、企业视觉形象VI策划、<br>画册等宣传品设计、包装设计制作、精美印刷、<br>展览展示、商务摄影、活动策划等服务。<br></p>
+            <div  class="fn color_f">
+                <a id="Open" class="Open dis color_f ft_18">展开分类...</a>
+                <div id="classify" class="classify ft_30 none">
+                    <p><img src="public/ma/img/j.png"></p>
+                    <dl>
+                        <dd class="fl txt_r">
+                            <a href="index.php?p=show&c=index&a=cases&type=Visuan Identity">Visuan Identity</a>
+                            <a href="index.php?p=show&c=index&a=cases&type=包装设计"><span class="ft_28">包装设计</span></a>
+                            <a href="index.php?p=show&c=index&a=cases&type=Activity">Activity</a>
+                            <a href="index.php?p=show&c=index&a=cases&type=Brand">Brand</a>
+                        </dd>
+                        <dd class="fr txt_l">
+                            <a href="index.php?p=show&c=index&a=cases&type=Book  &   DM">Book  &   DM</a>
+                            <a href="index.php?p=show&c=index&a=cases&type=Photography">Photography</a>
+                            <a href="index.php?p=show&c=index&a=cases&type=Exhibiton">Exhibiton</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <!--list  start-->
+        <div class="case_list">
+            <dl>
+                <?php if(!empty($datas)):?>
+                <?php foreach($datas as $k=>$data):?>
+                    <dd class="<?=$k%2==0?'fl':'fr' ?>">
+                        <img src="<?=$data['fengmian']?>">
+                        <div class="zzc txt_c ft_24 color_f none">
+                            <p><?=$data['xiangmu']?></p>
+                            <span class="dis pad_t_10"><img src="public/ma/img/x.png"></span>
+                            <h1 class="ft_42"><?=$data['mingcheng']?></h1>
+                            <a class="color_f detail" casesId="<?=$data['id']?>">查看此案例</a>
+                        </div>
+                    </dd>
+                <?php endforeach;?>
+                <?php endif;?>
+            </dl>
+            <div class="txt_c"><a class="ck_more ft_36 color_y">查看更多...</a></div>
+        </div>
+        <!--list  end-->
+    </div>
+    <!--main end-->
+
+    <div class="contact color_f txt_c">
+        <p class="ft_36"><span class="ft_48">Just now！</span>快来联系我们吧</p>
+        <a class="dis ft_18 color_f">获取地址</a>
+    </div>
+</div>
+<!-- footer start -->
+<div class="foot">
+    <div class="f_nav">
+				<span id="tooltip" class="tb txt_c ft_16">
+					<a>
+						<img src="public/ma/img/wx.png" class="t-img">
+						<div class="tooltip-item none" style="width:auto;left:0;">
+							<img src="public/ma/img/ewm.png">
+							<em></em>
+						</div>
+					</a>
+					<a><img src="public/ma/img/qq.png" class="t-img">
+					    <div class="tooltip-item txt_c none">
+							<p>QQ：15247859654 dd@qq.com</p>
+							<em></em>
+						</div>
+					</a>
+					<a><img src="public/ma/img/phone.png" class="t-img">
+					    <div class="tooltip-item txt_c none">
+							<p>电话：15247859654</p>
+							<em></em>
+						</div>
+					</a>
+					<a><img src="public/ma/img/dw.png" class="t-img">
+						<div class="tooltip-item txt_c none">
+							<p>成都市建设路2号2栋2单元1302室</p>
+							<em></em>
+						</div>
+					</a>
+				</span>
+        <span class="f_nav2 ft_18">
+					<a href="index.php">回到首页</a>
+					<a href="index.php?p=show&c=index&a=about#aboutUs">关于我们</a>
+					<a href="index.php?p=show&c=index&a=cases">案列展示</a>
+					<a href="index.php?p=show&c=index&a=about#partner">合作伙伴</a>
+					<a href="index.php#lianxiwomen">加入我们</a>
+				</span>
+    </div>
+    <div class="width_w bq ft_16">
+        <div>
+            <span>版权所有：成都市励拓广告有限公司</span>
+            <span>备案号：蜀ICP备1500025</span>
+            <a>邮箱：20299705@qq.com</a>
+            <a>http://www.cditad.com/</a>
+        </div>
+    </div>
+</div>
+<!-- footer end -->
+
+<!-- 弹出框 start-->
+<div class="Popup none">
+    <div class="zzc2"></div>
+    <div class="popup_box">
+        <h1 class="ft_16 color_y" id="mingcheng">林妹妹果茶</h1>
+        <div class="about ft_18"><img src="public/ma/img/d2.png">ABOUT</div>
+        <div id="dig_close" class="txt_r"><img src="public/ma/img/dig_colse.png"/></div>
+        <!-- 轮播 -->
+        <div class="focusBox">
+            <div class="focus">
+                <span id="prev"></span>
+                <span id="next"></span>
+                <span id="prevTop"></span>
+                <span id="nextTop"></span>
+                <!--大图 start-->
+                <style>
+                    .focus .picBox li{
+                        position:relative;
+                    }
+                </style>
+                <div id="picBox" class="picBox">
+                    <ul class="cf">
+                        <li><a href="#"><img id="bigPic1" src="public/ma/img/about.png"/></a></li>
+                        <li><a href="#"><img id="bigPic2" src="public/ma/img/about.png"/></a></li>
+                        <li><a href="#"><img id="bigPic3" src="public/ma/img/about.png"/></a></li>
+                        <li><a href="#"><img id="bigPic4" src="public/ma/img/about.png"/></a></li>
+                    </ul>
+                </div>
+                <div id="numct" class="numct ft_18">
+                    <ul>
+                        <li class="tk"><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                        <li><a>4</a></li>
+                    </ul>
+                </div>
+                <!--小图 start-->
+                <div id="listBox" class="listBox none">
+                    <div class="ft_12 cp_xx">
+                        <p id="xiangmu">项目：产品摄影</p>
+                        <p id="kehu">客户：四川顺翔农业开发有限公司</p>
+                        <p id="chengguo">成果：帮助客户提高品牌及产品的知名度和美誉度，吸引消费者视线，提升购买欲。</p>
+                    </div>
+                    <!-- -->
+                    <dl>
+                        <dd class="d_ck"><a></a></dd>
+                        <dd><a></a></dd>
+                        <dd><a></a></dd>
+                        <dd><a></a></dd>
+                    </dl>
+                    <!-- -->
+                    <div style="position: relative; top:0; overflow: hidden;height: 332px;">
+                        <ul class="cf">
+                            <li class="on"><i class="arr2"></i><img id="smallPic1" src="public/ma/img/banner2.png"/></li>
+                            <li><i class="arr2"></i><img id="smallPic2" src="public/ma/img/banner2.png"/></li>
+                            <li><i class="arr2"></i><img id="smallPic3" src="public/ma/img/banner2.png"/></li>
+                            <li><i class="arr2"></i><img id="smallPic4" src="public/ma/img/banner2.png"/></li>
+                        </ul>
+                        <div>
+                        </div>
+                        <!--小图 end-->
+                    </div>
+                </div>
+
+                <!-- 轮播 -->
+            </div>
+
+        </div>
+    </div>
+</div>
+        <!-- 弹出框 end-->
+        <script src="public/ma/js/focus.js"></script>
+        <script type="text/javascript">
+            new WOW().init();
+
+        </script>
+        <script type="text/javascript">
+            $(".detail").click(function () {
+                var casesId = $(this).attr("casesId");
+                $.post("index.php?p=show&c=index&a=detail",{casesId:casesId},function (data) {
+                    console.log(data);
+                    $("#mingcheng").text(data.mingcheng)
+                    $("#bigPic1").attr("src",data.tupian1)
+                    $("#bigPic2").attr("src",data.tupian2)
+                    $("#bigPic3").attr("src",data.tupian3)
+                    $("#bigPic4").attr("src",data.tupian4)
+                    $("#xiangmu").text("项目："+data.xiangmu)
+                    $("#kehu").text("客户："+data.kehu)
+                    $("#chengguo").text("成果："+data.chengguo)
+                    $("#smallPic1").attr("src",data.tupian1)
+                    $("#smallPic2").attr("src",data.tupian2)
+                    $("#smallPic3").attr("src",data.tupian3)
+                    $("#smallPic4").attr("src",data.tupian4)
+                    $(".Popup").show();
+                },"json")
+//                $(".Popup").show();
+            })
+        </script>
+</body>
+</html>

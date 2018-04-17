@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title></title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="public/ma/css/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="public/ma/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="public/ma/css/style.css"/>
+    <script type="text/javascript" src="public/ma/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="public/ma/js/js.js"></script>
+    <script type="text/javascript" src="public/ma/js/wow.min.js"></script>
+</head>
+<body>
+<div class="cases">
+    <!--head start-->
+    <div class="head txt_c">
+        <a class="fl"><img src="public/ma/img/fh.png"></a>
+        <span class="ft_26">无视觉 <font class="color_y">●</font>不形象</span>
+        <a class="nav_open fr ft_18">MENU<img src="public/ma/img/zk2.png" class="pad_l_15"></a>
+    </div>
+
+    <div class="nav_box none ft_55 txt_c">
+        <div class="close txt_r dis"><img src="public/ma/img/close.png"></div>
+        <ul>
+            <li><a class="bor animated flipInX" href="index.php">Home</a></li>
+            <li><a class="bor animated flipInX" href="index.php?p=show&c=index&a=about">About</a></li>
+            <li><a class="bor animated flipInX" href="index.php?p=show&c=index&a=cases">Dsign</a></li>
+            <li><a class="animated flipInY" href="index.php#lianxiwomen">联系我们</a></li>
+        </ul>
+        <p class="color_f ft_16 txt_l">备案号：蜀ICP备1500025</p>
+    </div>
+    <!--head end-->
+
+    <!--logo start-->
+    <div class="logo txt_c animated fadeInUp">
+        <span><img src="public/ma/img/logo1.png"></span>
+        <span><img src="public/ma/img/logo2.png"></span>
+    </div>
+    <!--logo end-->
+
+    <div class="banner" style="background-image: url(public/ma/img/banner3.png);"></div>
+    <!-- start-->
+    <a name="aboutUs"></a>
+    <div class="jis">
+        <dl class="jis1">
+            <dd class="fl ft_42 txt_c color_f">我们的业务</dd>
+            <dd class="fr qtd color_y">
+                <?php if(!empty($datalist)):?>
+                    <?php foreach($datalist as $k=>$data):?>
+                        <?php if($k==0):?>
+                            <div>
+                                <h1 class="ft_24"><?=$data["biaoti"]?></h1>
+                                <p class="ft_18"><?=str_replace("<p>","",$data["neirong"])?></p>
+                            </div>
+                        <?php endif;?>
+                    <?php endforeach;?>
+                <?php endif;?>
+                <a class="fr ft_18"><span>NEXT</span><img src="public/ma/img/next.png"></a>
+            </dd>
+        </dl>
+        <dl class="jis2">
+            <dd class="fl">
+                <?php if(!empty($datalist)):?>
+                    <?php foreach($datalist as $k=>$data):?>
+                        <?php if($k>0):?>
+                            <div class="flct ft_18">
+                                <h1 class="ft_24 <?=$k==1?color_y:'' ?>"><?=$data["biaoti"]?></h1>
+                                <p><?=$data["neirong"]?></pre>
+                            </div>
+                        <?php endif;?>
+                    <?php endforeach;?>
+                <?php endif;?>
+            </dd>
+            <dd class="fr"><img src="public/ma/img/jspic.png"></dd>
+        </dl>
+    </div>
+    <!-- end-->
+    <!--合作伙伴 start-->
+    <a name="partner"></a>
+    <div class="partner txt_c">
+        <div class="p_bg color_f ft_36"><h1><span class="ft_48">Our partner</span>我们的合作伙伴</h1></div>
+        <div class="partnerlogo width_w">
+            <dl>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/1.png"></a>
+                    <a><img src="public/ma/img/LOGO/2.png"></a>
+                    <a><img src="public/ma/img/LOGO/3.png"></a>
+                    <a><img src="public/ma/img/LOGO/4.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/5.png"></a>
+                    <a><img src="public/ma/img/LOGO/6.png"></a>
+                    <a><img src="public/ma/img/LOGO/7.png"></a>
+                    <a><img src="public/ma/img/LOGO/8.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/9.png"></a>
+                    <a><img src="public/ma/img/LOGO/10.png"></a>
+                    <a><img src="public/ma/img/LOGO/11.png"></a>
+                    <a><img src="public/ma/img/LOGO/12.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/13.png"></a>
+                    <a><img src="public/ma/img/LOGO/14.png"></a>
+                    <a><img src="public/ma/img/LOGO/15.png"></a>
+                    <a><img src="public/ma/img/LOGO/16.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/17.png"></a>
+                    <a><img src="public/ma/img/LOGO/18.png"></a>
+                    <a><img src="public/ma/img/LOGO/19.png"></a>
+                    <a><img src="public/ma/img/LOGO/20.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/21.png"></a>
+                    <a><img src="public/ma/img/LOGO/22.png"></a>
+                    <a><img src="public/ma/img/LOGO/23.png"></a>
+                    <a><img src="public/ma/img/LOGO/24.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/25.png"></a>
+                    <a><img src="public/ma/img/LOGO/26.png"></a>
+                    <a><img src="public/ma/img/LOGO/27.png"></a>
+                    <a><img src="public/ma/img/LOGO/28.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/29.png"></a>
+                    <a><img src="public/ma/img/LOGO/30.png"></a>
+                    <a><img src="public/ma/img/LOGO/31.png"></a>
+                    <a><img src="public/ma/img/LOGO/32.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/33.png"></a>
+                    <a><img src="public/ma/img/LOGO/34.png"></a>
+                    <a><img src="public/ma/img/LOGO/35.png"></a>
+                    <a><img src="public/ma/img/LOGO/36.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/37.png"></a>
+                    <a><img src="public/ma/img/LOGO/38.png"></a>
+                    <a><img src="public/ma/img/LOGO/39.png"></a>
+                    <a><img src="public/ma/img/LOGO/40.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/41.png"></a>
+                    <a><img src="public/ma/img/LOGO/42.png"></a>
+                    <a><img src="public/ma/img/LOGO/43.png"></a>
+                    <a><img src="public/ma/img/LOGO/44.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/45.png"></a>
+                    <a><img src="public/ma/img/LOGO/46.png"></a>
+                    <a><img src="public/ma/img/LOGO/47.png"></a>
+                    <a><img src="public/ma/img/LOGO/48.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/49.png"></a>
+                    <a><img src="public/ma/img/LOGO/50.png"></a>
+                    <a><img src="public/ma/img/LOGO/51.png"></a>
+                    <a><img src="public/ma/img/LOGO/52.png"></a>
+                </dd>
+                <dd>
+                    <a><img src="public/ma/img/LOGO/53.png"></a>
+                    <a><img src="public/ma/img/LOGO/54.png"></a>
+                    <a><img src="public/ma/img/LOGO/55.png"></a>
+                    <a><img src="public/ma/img/LOGO/56.png"></a>
+                </dd>
+            </dl>
+            <div id="more" class="txt_c"><a><img src="public/ma/img/xl.png"></a></div>
+        </div>
+    </div>
+    <!--合作伙伴 end-->
+
+    <div class="contact color_f txt_c">
+        <p class="ft_36"><span class="ft_48">Just now！</span>快来联系我们吧</p>
+        <a class="dis ft_18 color_f">获取地址</a>
+    </div>
+</div>
+<!-- footer start -->
+<div class="foot">
+    <div class="f_nav">
+				<span id="tooltip" class="tb txt_c ft_16">
+					<a>
+						<img src="public/ma/img/wx.png" class="t-img">
+						<div class="tooltip-item none" style="width:auto;left:0;">
+							<img src="public/ma/img/ewm.png">
+							<em></em>
+						</div>
+					</a>
+					<a><img src="public/ma/img/qq.png" class="t-img">
+					    <div class="tooltip-item txt_c none">
+							<p>QQ：15247859654 dd@qq.com</p>
+							<em></em>
+						</div>
+					</a>
+					<a><img src="public/ma/img/phone.png" class="t-img">
+					    <div class="tooltip-item txt_c none">
+							<p>电话：15247859654</p>
+							<em></em>
+						</div>
+					</a>
+					<a><img src="public/ma/img/dw.png" class="t-img">
+						<div class="tooltip-item txt_c none">
+							<p>成都市建设路2号2栋2单元1302室</p>
+							<em></em>
+						</div>
+					</a>
+				</span>
+        <span class="f_nav2 ft_18">
+					<a href="index.php">回到首页</a>
+					<a href="#aboutUs">关于我们</a>
+					<a href="index.php?p=show&c=index&a=cases">案列展示</a>
+					<a href="#partner">合作伙伴</a>
+					<a href="index.php#lianxiwomen">加入我们</a>
+				</span>
+    </div>
+    <div class="width_w bq ft_16">
+        <div>
+            <span>版权所有：成都市励拓广告有限公司</span>
+            <span>备案号：蜀ICP备1500025</span>
+            <a>邮箱：20299705@qq.com</a>
+            <a>http://www.cditad.com/</a>
+        </div>
+    </div>
+</div>
+<!-- footer end -->
+<script type="text/javascript">
+    new WOW().init();
+</script>
+</body>
+</html>

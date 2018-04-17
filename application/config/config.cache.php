@@ -1,6 +1,7 @@
 <?php 
  return array(
-	'SITEURL'=>'4646',
+
+	'SITEURL'=>'http://www.motivationaladvertising.com',
 	'SEOTITLE'=>'',
 	'SEOKEYWORDS'=>'',
 	'SEODESCRIPTION'=>'',
