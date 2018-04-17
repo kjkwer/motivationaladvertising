@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <title></title>
+    <meta name="keywords" content="<?=self::$keywords?>" />
+    <meta name="description" content="<?=self::$description?>" />
+    <title><?=self::$title?></title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="public/ma/css/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="public/ma/css/public.css"/>
@@ -249,7 +249,7 @@
     </div>
 </div>
 <!-- 弹出框 start-->
-<div class="Popup none">
+<div class="Popup">
     <div class="zzc2"></div>
     <div class="popup_box">
         <h1 class="ft_16 color_y" id="mingcheng">林妹妹果茶</h1>
@@ -285,7 +285,7 @@
                     </ul>
                 </div>
                 <!--小图 start-->
-                <div id="listBox" class="listBox none">
+                <div id="listBox" class="listBox">
                     <div class="ft_12 cp_xx">
                         <p id="xiangmu">项目：产品摄影</p>
                         <p id="kehu">客户：四川顺翔农业开发有限公司</p>
@@ -348,6 +348,8 @@
 </script>
 <!--加入我们-->
 <script type="text/javascript">
+    $(".Popup").hide();
+    $("#listbox").hide();
     $("#wancheng").click(function () {
         var lianxiren = $("#lianxiren").val();
         var qiyemingcheng = $("#qiyemingcheng").val();
